@@ -4,7 +4,7 @@ import { TypeAnimation } from "react-type-animation";
 
 function Hero() {
   return (
-    <section className="lg:py-16">
+    <section className="py-8 lg:py-16">
       <div className="grid grid-cols-1 lg:grid-cols-12">
         <div className="col-span-7 place-self-center text-center sm:text-left lg:justify-self-start">
           <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold">
@@ -41,7 +41,7 @@ function Hero() {
           </div>
         </div>
         <div className="col-span-5 place-self-center mt-6 lg:mt-0">
-          <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[350px] lg:h-[350px] relative overflow-hidden">
+          <div className="rounded-full bg-opacity-50 bg-[#393838] w-[250px] h-[250px] lg:w-[325px] lg:h-[325px] relative overflow-hidden">
             <Image
               src="/images/avatar.png"
               alt="Hero"
