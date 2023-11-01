@@ -1,5 +1,6 @@
-import React from "react";
+"use client";
 import Image from "next/image";
+import { TypeAnimation } from "react-type-animation";
 
 function Hero() {
   return (
@@ -11,10 +12,22 @@ function Hero() {
               Hello, I&rsquo;m{" "}
             </span>
             <br></br>
-            Thomas Meyer
+            <TypeAnimation
+              sequence={[
+                // Same substring at the start will only be typed out once, initially
+                "Thomas Meyer",
+                1000, // wait 1s before replacing "Mice" with "Hamsters"
+                "A Full Stack Web Developer",
+                2000,
+              ]}
+              wrapper="span"
+              speed={20}
+              repeat={Infinity}
+            />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg lg:text-xl mb-6">
-            Full stack web developer
+            A dedicated web developer motivated by the creative process of
+            bringing digital experinces to life.
           </p>
           <div>
             <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-r from-slate-700 via-slate-500 to-stone-200 text-white hover:text-black hover:bg-slate-500">
@@ -35,7 +48,7 @@ function Hero() {
               className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 "
               width={300}
               height={500}
-              responsive
+              // responsive
             />
           </div>
         </div>
