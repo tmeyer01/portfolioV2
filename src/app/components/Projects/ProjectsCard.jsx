@@ -23,7 +23,7 @@ function ProjectsCard({ imgSrc, title, description, link, video }) {
           </Link>
         </div>
       </div>
-      <div className="text-white rounded-b-xl  bg-[#181818] py-16 px-4">
+      <div className="text-white rounded-b-xl  bg-[#181818] py-16 px-4 h-4/6 ">
         <h5 className="font-xl font-semibold mb-2">{title}</h5>
         <p className="text-[#ADB7BE]">{description}</p>
       </div>
