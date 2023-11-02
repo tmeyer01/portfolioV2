@@ -3,43 +3,7 @@ import { useState, useTransition } from "react";
 import Image from "next/image";
 
 import TabButton from "@/app/components/TabButton/TabButton";
-
-const TAB_DATA = [
-  {
-    title: "Skills",
-    id: "skills",
-    content: (
-      <ul className="list-disc pl-2">
-        <li>Node.js</li>
-        <li>Express</li>
-        <li>PostgreSQL</li>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>NextJS</li>
-        <li>TailwindCSS</li>
-      </ul>
-    ),
-  },
-  {
-    title: "Education",
-    id: "education",
-    content: (
-      <ul className="list-disc pl-2">
-        <li>Lighthouse Labs - Full stack web development diploma</li>
-      </ul>
-    ),
-  },
-  {
-    title: "Certifications",
-    id: "certifications",
-    content: (
-      <ul className="list-disc pl-2">
-        <li>Codecademy Javascript Course</li>
-        <li>Codecademy CSS Course</li>
-      </ul>
-    ),
-  },
-];
+import { TAB_DATA } from "@/app/components/About/TabData";
 
 function AboutMe() {
   const [tab, setTab] = useState("skills");
@@ -53,9 +17,6 @@ function AboutMe() {
 
   return (
     <section className="text-white" id="about">
-      {/* <div className="md:grid md:gird-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 "> */}
-      {/* <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-       */}
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         <Image src="/images/coding.jpg" width={500} height={500} alt="Coding" />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full pb-8">
