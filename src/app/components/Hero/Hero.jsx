@@ -4,7 +4,7 @@ import { TypeAnimation } from "react-type-animation";
 
 function Hero() {
   return (
-    <section className="py-8 lg:py-16">
+    <section className="lg:py-16">
       <div className="grid grid-cols-1 lg:grid-cols-12">
         <div className="col-span-7 place-self-center text-center sm:text-left lg:justify-self-start">
           <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold">
@@ -17,7 +17,7 @@ function Hero() {
                 // Same substring at the start will only be typed out once, initially
                 "Thomas Meyer",
                 1000, // wait 1s before replacing "Mice" with "Hamsters"
-                "A Full Stack Web Developer",
+                "A Full Stack Web Dev",
                 2000,
               ]}
               wrapper="span"

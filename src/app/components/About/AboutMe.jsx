@@ -54,23 +54,24 @@ function AboutMe() {
   return (
     <section className="text-white" id="about">
       {/* <div className="md:grid md:gird-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 "> */}
+      {/* <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
+       */}
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src="/images/coding.jpg" width={400} height={400} alt="Coding" />
-        <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
+        <Image src="/images/coding.jpg" width={500} height={500} alt="Coding" />
+        <div className="mt-4 md:mt-0 text-left flex flex-col h-full pb-8">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className=" text-base lg:text-lg">
             {" "}
-            I&rsquo;m a full-stack web developer based in Vancouver, BC, with a
-            strong foundation in JavaScript and proficiency in both front-end
-            and back-end development. I&rsquo;ve been coding for a few years now
-            but my journey really began with a coding BootCamp, and I have honed
-            my skills working on e-commerce sites and leveraging content
-            management systems. I&rsquo;m not just passionate about creating
-            innovative and user-friendly websites and applications. Beyond
-            coding, I channel my determination and discipline into training for
-            bicycle-related ultra-endurance races when I&rsquo;m not at the
-            keyboard. My drive and adaptability in both web development and my
-            cycling pursuits make me a valuable asset to any project.
+            I&rsquo;m a full-stack web developer based in Vancouver, BC.
+            I&rsquo;ve been coding for a few years now but my journey really
+            began with a coding BootCamp, and I have honed my skills working on
+            e-commerce sites and leveraging content management systems.
+            I&rsquo;m not just passionate about creating innovative and
+            user-friendly websites and applications. Beyond coding, I channel my
+            determination and discipline into training for bicycle-related
+            ultra-endurance races when I&rsquo;m not at the keyboard. My drive
+            and adaptability in both web development and my cycling pursuits
+            make me a valuable asset to any project.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
