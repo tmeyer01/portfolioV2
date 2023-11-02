@@ -41,7 +41,7 @@ function Hero() {
           </div>
         </div>
         <div className="col-span-5 place-self-center mt-6 lg:mt-0">
-          <div className="rounded-full bg-opacity-50 bg-[#393838] w-[250px] h-[250px] lg:w-[325px] lg:h-[325px] relative overflow-hidden">
+          <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#393838] to-transparent rounded-full w-[250px] h-[250px] lg:w-[325px] lg:h-[325px] relative overflow-hidden">
             <Image
               src="/images/avatar.png"
               alt="Hero"
