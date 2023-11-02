@@ -35,9 +35,11 @@ const projectsData = [
 
 function ProjectsSection() {
   return (
-    <>
-      <h2>My Projects</h2>
-      <div>
+    <section className=" lg:py-12" id="projects">
+      <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
+        My Projects
+      </h2>
+      <div className="grid md:grid-cols-3 gap-8 md:gap-12">
         {projectsData.map((project) => (
           <ProjectsCard
             key={project.id}
@@ -49,7 +51,7 @@ function ProjectsSection() {
           />
         ))}
       </div>
-    </>
+    </section>
   );
 }
 
