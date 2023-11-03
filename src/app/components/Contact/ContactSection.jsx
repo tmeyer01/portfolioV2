@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -8,15 +8,28 @@ import Image from "next/image";
 import GithubIcon from "../../../../public/images/github-icon.svg";
 import LinkedInIcon from "../../../../public/images/linkedin-icon.svg";
 
+import Modal from "@/app/components/Modal/Modal";
+
 const ContactSection = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+
+  // Add state variables to track input values
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+
+  // Create refs for the input fields
+  const emailRef = useRef();
+  const subjectRef = useRef();
+  const messageRef = useRef();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     const data = {
-      email: e.target.email.value,
-      subject: e.target.subject.value,
-      message: e.target.message.value,
+      email,
+      subject,
+      message,
     };
     const JSONdata = JSON.stringify(data);
     const endpoint = "/api/send";
@@ -25,7 +38,7 @@ const ContactSection = () => {
     const options = {
       // The method is POST because we are sending data.
       method: "POST",
-      // Tell the server we're sending JSON.
+      // Tell the server we're sending JSON
       headers: {
         "Content-Type": "application/json",
       },
@@ -40,6 +53,16 @@ const ContactSection = () => {
     if (response.status === 200) {
       console.log("Message sent.");
       setEmailSubmitted(true);
+      setShowModal(true);
+
+      // Reset form values to their placeholders
+      setEmail("");
+      setSubject("");
+      setMessage("");
+      // Use refs to clear input values
+      emailRef.current.value = "";
+      subjectRef.current.value = "";
+      messageRef.current.value = "";
     }
   };
 
@@ -48,7 +71,7 @@ const ContactSection = () => {
       className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative"
       id="contact"
     >
-      <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#39383899] to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
+      {/* <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#39383899] to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div> */}
       <div className="z-10">
         <h5 className="text-xl font-bold text-white my-2">Contact Me</h5>
         <p className="text-[#ADB7BE] mb-4 max-w-md">
@@ -82,6 +105,9 @@ const ContactSection = () => {
               required
               className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5 "
               placeholder="youremail@gmail.com"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              ref={emailRef}
             />
           </div>
           <div className="mb-6">
@@ -98,6 +124,9 @@ const ContactSection = () => {
               required
               className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5 "
               placeholder="Looking for react developer"
+              value={subject}
+              onChange={(e) => setSubject(e.target.value)}
+              ref={subjectRef}
             />
           </div>
           <div className="mb-6">
@@ -110,6 +139,9 @@ const ContactSection = () => {
                 id="message"
                 className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5 "
                 placeholder="Your message..."
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+                ref={messageRef}
               />
             </label>
           </div>
@@ -117,11 +149,12 @@ const ContactSection = () => {
             type="submit"
             className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-r from-slate-700 via-slate-500 to-stone-200 text-white hover:text-black mt-3"
           >
-            <span className="block bg-[#121212] hover:bg-slate-600 rounded-full px-5 py-2">
+            <span className="block bg-[#121212] hover-bg-slate-600 rounded-full px-5 py-2">
               Send Message
             </span>
           </button>
         </form>
+        <Modal isVisible={showModal} onClose={() => setShowModal(false)} />
       </div>
     </section>
   );
