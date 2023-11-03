@@ -6,15 +6,22 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 const fromEmail = process.env.FROM_EMAIL;
 
 
-export async function POST() {
+export async function POST(req, res) {
+  const { body } = req;
+  const { email, subject, message } = body;
+
   try {
     const data = await resend.emails.send({
       from: fromEmail,
-      to: [""],
-      subject: 'Hello world',
+      to: ["", email],
+      subject: subject,
       react:(
         <>
-          <p>Email body</p>
+          <h1>{subject}</h1>
+          <p>Thanks you for reaching out to TmDev!</p>
+          <p>We will get back to you as soon as possible.</p>
+          <p></p>
+          <p>{message}</p>
         </>
       )
     });
