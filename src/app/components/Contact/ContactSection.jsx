@@ -1,5 +1,7 @@
 "use client";
 
+import { useState } from "react";
+
 import Link from "next/link";
 import Image from "next/image";
 
@@ -7,6 +9,8 @@ import GithubIcon from "../../../../public/images/github-icon.svg";
 import LinkedInIcon from "../../../../public/images/linkedin-icon.svg";
 
 const ContactSection = () => {
+  const [emailSubmitted, setEmailSubmitted] = useState(false);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     const data = {
@@ -31,6 +35,7 @@ const ContactSection = () => {
 
     const response = await fetch(endpoint, options);
     const resData = await response.json();
+    console.log(resData);
 
     if (response.status === 200) {
       console.log("Message sent.");
@@ -66,7 +71,6 @@ const ContactSection = () => {
           <div className="mb-6">
             <label
               htmlFor="email"
-              type="email"
               className="text-white block mb-2 text-sm font-medium "
             >
               Your email
