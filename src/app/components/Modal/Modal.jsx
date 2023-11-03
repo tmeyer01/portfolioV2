@@ -4,13 +4,11 @@ function Modal({ isVisible, onClose }) {
   if (!isVisible) return null;
 
   return (
-    // <div className="fixed inset-0 bg-black bg-opacity-25 backdrop-blur flex justify-center items-center">
     <div className="relative z-40">
       <dir
         className="fixed inset-0 bg-black bg-opacity-25 backdrop-blur flex justify-center items-center "
         onClick={() => onClose()}
       >
-        {/* <dir className="relative z-40"> */}
         <div className="flex flex-col">
           <XMarkIcon
             className="h-8 w-8 text-white self-end translate-x-1/2"

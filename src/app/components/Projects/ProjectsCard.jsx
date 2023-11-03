@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function ProjectsCard({ imgSrc, title, description, link, video }) {
   return (
-    <div>
+    <div className="h-full">
       <div
         className="h-52 md:h-72 rounded-t-xl relative group mt-2"
         style={{ background: `url(${imgSrc})`, backgroundSize: "cover" }}
@@ -23,7 +23,7 @@ function ProjectsCard({ imgSrc, title, description, link, video }) {
           </Link>
         </div>
       </div>
-      <div className="text-white rounded-b-xl  bg-[#181818] py-16 px-4 h-4/6 ">
+      <div className="text-white rounded-b-xl  bg-[#181818] py-16 px-4 md:h-3/4 ">
         <h5 className="font-xl font-semibold mb-2">{title}</h5>
         <p className="text-[#ADB7BE]">{description}</p>
       </div>

@@ -23,16 +23,18 @@ function AboutMe() {
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className=" text-base lg:text-lg">
             {" "}
-            I&rsquo;m a full-stack web developer based in Vancouver, BC.
-            I&rsquo;ve been coding for a few years now but my journey really
-            began with a coding BootCamp, and I have honed my skills working on
-            e-commerce sites and leveraging content management systems.
-            I&rsquo;m not just passionate about creating innovative and
-            user-friendly websites and applications. Beyond coding, I channel my
-            determination and discipline into training for bicycle-related
-            ultra-endurance races when I&rsquo;m not at the keyboard. My drive
-            and adaptability in both web development and my cycling pursuits
-            make me a valuable asset to any project.
+            I&rsquo;m a full-stack web developer based in Vancouver, BC, with a
+            passion for coding. Over the years, I&rsquo;ve honed my skills
+            through hands-on experience with Agile software development
+            methodologies. This experience has been gained by working on
+            e-commerce sites and mastering content management systems.
+            <br />
+            I&rsquo;m driven by the art of creating user-friendly websites and
+            applications, and I approach each project with boundless creativity
+            and enthusiasm. Beyond coding, I&rsquo;m an ultra-endurance cyclist,
+            reflecting my determination and discipline in both web development
+            and personal pursuits. My dedication to excellence and adaptability
+            makes me a valuable asset for any project.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
