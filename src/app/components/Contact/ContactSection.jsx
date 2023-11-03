@@ -1,3 +1,5 @@
+"use Client";
+
 import Link from "next/link";
 import Image from "next/image";
 
@@ -60,7 +62,7 @@ const ContactSection = () => {
         </div>
       </div>
       <div>
-        <form action="" className="flex flex-col ">
+        <form action="" className="flex flex-col" onSubmit={handleSubmit}>
           <div className="mb-6">
             <label
               htmlFor="email"
