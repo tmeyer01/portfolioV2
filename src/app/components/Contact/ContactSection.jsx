@@ -72,6 +72,7 @@ const ContactSection = () => {
               Your email
             </label>
             <input
+              name="email"
               type="email"
               id="email"
               required
@@ -82,12 +83,12 @@ const ContactSection = () => {
           <div className="mb-6">
             <label
               htmlFor="subject"
-              type="email"
               className="text-white block mb-2 text-sm font-medium "
             >
               Subject
             </label>
             <input
+              name="subject"
               type="text"
               id="subject"
               required
