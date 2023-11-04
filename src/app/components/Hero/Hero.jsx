@@ -41,7 +41,7 @@ function Hero() {
           <div>
             <Link
               href="#contact"
-              className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-r from-slate-700 via-slate-500 to-stone-200 text-white hover:text-black hover:bg-slate-500"
+              className="px-6 inline-block py-3 w-full sm:w-fit rounded-full md:mr-4 bg-gradient-to-r from-slate-700 via-slate-500 to-stone-200 text-white hover:text-black hover:bg-slate-500"
             >
               Hire Me
             </Link>
