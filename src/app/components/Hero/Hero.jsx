@@ -1,11 +1,12 @@
 "use client";
 import Image from "next/image";
+
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 
 function Hero() {
   return (
-    <section className=" py-14 lg:py-16">
+    <section className="py-14 lg:py-16">
       <div className="grid grid-cols-1 lg:grid-cols-12">
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
@@ -58,8 +59,9 @@ function Hero() {
               src="/images/avatar.png"
               alt="Hero"
               className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 "
-              width={300}
+              width={500}
               height={500}
+              priority={true}
             />
           </div>
         </motion.div>

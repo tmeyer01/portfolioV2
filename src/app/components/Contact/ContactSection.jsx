@@ -48,10 +48,8 @@ const ContactSection = () => {
 
     const response = await fetch(endpoint, options);
     const resData = await response.json();
-    console.log(resData);
 
     if (response.status === 200) {
-      console.log("Message sent.");
       setEmailSubmitted(true);
       setShowModal(true);
 
@@ -68,10 +66,10 @@ const ContactSection = () => {
 
   return (
     <section
-      className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative"
+      className="grid md:grid-cols-2 my-6 md:my-12 py-24 md:py-40 gap-4 relative"
       id="contact"
     >
-      <div className="z-10">
+      <div className="z-10 pb-5">
         <h5 className="text-xl font-bold text-white my-2">Contact Me</h5>
         <p className="text-[#ADB7BE] mb-4 max-w-md">
           {" "}

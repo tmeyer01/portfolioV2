@@ -23,18 +23,19 @@ function AboutMe() {
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className=" text-base lg:text-lg">
             {" "}
-            I&rsquo;m a full-stack web developer based in Vancouver, BC, with a
-            passion for coding. Over the years, I&rsquo;ve honed my skills
-            through hands-on experience with Agile software development
-            methodologies. This experience has been gained by working on
-            e-commerce sites and mastering content management systems.
+            I am a web developer based in Vancouver, BC who specializes in full
+            stack development. Coding is my passion. I have gained skills over
+            the years through hands on experience, with Agile software
+            development methodologies. This experience has been acquired by
+            working on e commerce sites and content management systems.
             <br />
-            I&rsquo;m driven by the art of creating user-friendly websites and
-            applications, and I approach each project with boundless creativity
-            and enthusiasm. Beyond coding, I&rsquo;m an ultra-endurance cyclist,
-            reflecting my determination and discipline in both web development
-            and personal pursuits. My dedication to excellence and adaptability
-            makes me a valuable asset for any project.
+            What drives me is the art of creating websites and applications
+            that&apos;re user friendly. I approach each project with creativity
+            and enthusiasm striving to deliver results. Apart from my coding
+            expertise I am also an ultra-endurance cyclist, which reflects my
+            determination and discipline not only in web development but also in
+            my personal pursuits. My commitment to excellence and adaptability
+            makes me a valuable asset, for any project.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
