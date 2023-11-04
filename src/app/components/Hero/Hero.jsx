@@ -45,11 +45,14 @@ function Hero() {
             >
               Hire Me
             </Link>
-            <button className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-r from-slate-700 via-slate-500 to-stone-200 text-white hover:text-black mt-3">
+            <Link
+              href="https://www.canva.com/design/DAEwBE504Vk/xNEYzY-ZtLBoGtA3jAhUVw/view?utm_content=DAEwBE504Vk&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
+              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-r from-slate-700 via-slate-500 to-stone-200 text-white hover:text-black mt-3"
+            >
               <span className="block bg-[#121212] hover:bg-slate-600 rounded-full px-5 py-2">
-                Download CV
+                Resume
               </span>
-            </button>
+            </Link>
           </div>
         </motion.div>
         <motion.div

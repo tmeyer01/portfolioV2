@@ -26,9 +26,9 @@ function AboutMe() {
             I am a web developer based in Vancouver, BC who specializes in full
             stack development. Coding is my passion. I have gained skills over
             the years through hands on experience, with Agile software
-            development methodologies. My expertise encompasses a diverse range
-            of frameworks and libraries, including React, Node.js, Express,
-            Next.js, Rails, jQuery, Ajax, Material-UI, Babel, ActiveRecord, and
+            development methodologies. I have experience, with a variety of
+            frameworks and libraries such, as React, Node.js, Express, Next.js,
+            Rails, jQuery, Ajax, Material UI, Babel, ActiveRecord and
             PostgreSQL.
             <br />
             What drives me is the art of creating websites and applications

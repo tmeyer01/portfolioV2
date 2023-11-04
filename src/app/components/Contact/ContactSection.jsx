@@ -69,13 +69,13 @@ const ContactSection = () => {
       className="grid md:grid-cols-2 my-6 md:my-12 py-24 md:py-40 gap-4 relative"
       id="contact"
     >
-      <div className="z-10 pb-5">
+      <div className="z-10 pb-5 md:pr-5">
         <h5 className="text-xl font-bold text-white my-2">Contact Me</h5>
         <p className="text-[#ADB7BE] mb-4 max-w-md">
           {" "}
           It all starts with a conversation, my inbox is always open. Whether
-          you just have a question or just want to talk about cycling, Ill try
-          and get back to you!
+          you just have a question about a coding project or just want to talk
+          about cycling, Ill try and get back to you!
         </p>
         <div className="socials flex flex-rows gap-2">
           <Link href="https://github.com/tmeyer01">
@@ -122,7 +122,7 @@ const ContactSection = () => {
               required
               autoComplete="subject"
               className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5 "
-              placeholder="Looking for react developer"
+              placeholder="I'm interested in..."
               value={subject}
               onChange={(e) => setSubject(e.target.value)}
               ref={subjectRef}
