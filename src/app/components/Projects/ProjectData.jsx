@@ -23,7 +23,7 @@ export const projects = [
   {
     id: 3,
     title: "TinyApp",
-    imgSrc: "/images/projects/tinyapp.png",
+    imgSrc: "/images/projects/tinyApp.png",
     description:
       "A bit.ly clone. This full-stack web application allows users to save shortened website URLs. Built with Node and Express",
     link: "https://github.com/tmeyer01/tinyapp",
