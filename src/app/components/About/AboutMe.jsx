@@ -21,13 +21,15 @@ function AboutMe() {
         <Image src="/images/coding.jpg" width={500} height={500} alt="Coding" />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full pb-8">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
-          <p className=" text-base lg:text-lg">
+          <p className=" text-base text-[#ADB7BE] lg:text-lg">
             {" "}
             I am a web developer based in Vancouver, BC who specializes in full
             stack development. Coding is my passion. I have gained skills over
             the years through hands on experience, with Agile software
-            development methodologies. This experience has been acquired by
-            working on e commerce sites and content management systems.
+            development methodologies. My expertise encompasses a diverse range
+            of frameworks and libraries, including React, Node.js, Express,
+            Next.js, Rails, jQuery, Ajax, Material-UI, Babel, ActiveRecord, and
+            PostgreSQL.
             <br />
             What drives me is the art of creating websites and applications
             that&apos;re user friendly. I approach each project with creativity

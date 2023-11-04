@@ -100,6 +100,7 @@ const ContactSection = () => {
               type="email"
               id="email"
               required
+              autoComplete="email"
               className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5 "
               placeholder="youremail@gmail.com"
               value={email}
@@ -119,6 +120,7 @@ const ContactSection = () => {
               type="text"
               id="subject"
               required
+              autoComplete="subject"
               className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5 "
               placeholder="Looking for react developer"
               value={subject}
@@ -146,7 +148,7 @@ const ContactSection = () => {
             type="submit"
             className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-r from-slate-700 via-slate-500 to-stone-200 text-white hover:text-black mt-3"
           >
-            <span className="block bg-[#121212] hover-bg-slate-600 rounded-full px-5 py-2">
+            <span className="block bg-background hover-bg-slate-600 rounded-full px-5 py-2">
               Send Message
             </span>
           </button>
